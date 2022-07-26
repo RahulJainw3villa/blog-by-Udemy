@@ -1,0 +1,31 @@
+<h1 class='text-center'>Create New Blog</h1>
+<%= form_with model: @blog do |form| %>
+    <div>
+      <%= form.label :title %><br>
+      <%= form.text_field :title, class:"form-control w-50"%>
+    </div>
+    <br>
+    <div>
+      <%= form.label :body %><br>
+      <%= form.text_area :body,size: "60x10", class:"form-control w-50" %>
+    </div>
+    <br>
+    <br>
+    <div>
+      <%= form.submit 'Submit', class:"btn btn-outline-primary btn-md w-50" %>
+    </div>
+<% end %>
+
+
+
+ <%# <%= image_tag "https://www.w3schools.com/images/w3schools_green.jpg", height: 300%> 
+ <%# <img src="https://www.w3schools.com/images/w3schools_green.jpg", height: 300px, width: 300px> %>
+ <%# <%= image_tag "", height: 300%> 
+ <%# <img src="https://pixabay.com/vectors/user-login-enter-icon-person-2160923/"> %>
+ <%# <p>
+  QuizMe is a free <%= link_to "Quizlet", "https://pixabay.com/photos/ramen-soup-food-asian-pasta-7238665/", target: "_blank" %> 
+<%# </p>  %>
+   <%# <div class="form-group">
+                <label for="media">Post Media</label>
+                <input type="file" name="media" class="form-control media-upload">
+            </div> %>

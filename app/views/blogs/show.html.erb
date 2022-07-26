@@ -1,0 +1,8 @@
+<h3>BLOG</h3>
+<div class="container">
+<h3 class='text-center'><%= @blog.title %> </h3>
+<p class='text-center'> <%= @blog.body %></p>
+<td><%= link_to 'Update',  edit_blog_path(@blog), class: 'btn btn-outline-primary' %></td>
+<td><%= link_to "Delete", blog_path(@blog), method: :delete,data:{ confirm: "Are you sure?"}, class: 'btn btn-danger text-white' %></td> 
+<td><%= link_to 'Back', blogs_path , class: 'btn btn-secondary text-white' %></td>
+</div>
